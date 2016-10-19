@@ -2,6 +2,7 @@ program main
 implicit none
 integer :: i, j, N_tot, dbg_count = 1
 real(kind=8) :: L_box, eps, dz, conv_eps = 0.00001**2 !square of conv criteria
+!Warning: Hardcoded Parameter conv_eps
 real(kind=8) , dimension(:), allocatable :: rho, rho_new
 logical :: conver = .False.! Converged to solution True or False
 
